@@ -1,6 +1,6 @@
 Write-Host "Managing files and folders"
-$siteDir = "C:/Sites/BlueSlot"
-$htmlDir = "./html/blue.html"
+$siteDir = "C:\inetpub\wwwroot\Website1"
+$htmlDir = ".\html\blue.html"
 mkdir $siteDir -ErrorAction SilentlyContinue
 Copy-Item $htmlDir -Destination "$siteDir/index.html"
 
